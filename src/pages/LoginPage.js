@@ -6,6 +6,7 @@ import {
   IconButton,
   InputAdornment,
   Container,
+  styled,
 } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
 import VisibilityIcon from "@mui/icons-material/Visibility";
@@ -29,6 +30,15 @@ const defaultValues = {
   password: "123",
   remember: true,
 };
+
+const Div = styled("div")(({ theme }) => ({
+  ...theme.typography.button,
+  color: theme.palette.text.text,
+  backgroundColor: theme.palette.secondary.main,
+  borderRadius: theme.shape.borderRadius,
+  padding: theme.spacing(1),
+  textAlign: "center",
+}));
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -74,6 +84,12 @@ function LoginPage() {
               Get started
             </Link>
           </Alert>
+
+          <Div>
+            {
+              "YOU CAN USE THE ACCOUNT BELOW TO LOGIN IF YOU DON'T WANT TO CREATE A NEW ACCOUNT"
+            }
+          </Div>
 
           <FTextField name="email" label="Email address" />
 
