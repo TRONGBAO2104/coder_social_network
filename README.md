@@ -3,7 +3,9 @@
 **Demo App:** https://coder-social-network-by-baobao.netlify.app/
 
 **Description:**
-- [ ] User can
+
+###Authentication
+- User have to login
 - User sees many movies layout on website
 - User sees paginate through all movies from the database
 - User sees random trailer videos when click button Trailer
