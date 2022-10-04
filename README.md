@@ -4,7 +4,7 @@
 
 **Description:**
 
-###Authentication
+### Authentication
 - User have to login
 - User sees many movies layout on website
 - User sees paginate through all movies from the database
